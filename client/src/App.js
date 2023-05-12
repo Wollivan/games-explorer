@@ -7,7 +7,7 @@ function App() {
   const [games, setGames] = useState([]);
 
   async function getGames(endpoint) {
-    const API = `http://localhost:8080/${endpoint}`;
+    const API = `https://games-explorer.onrender.com/${endpoint}`;
     const res = await axios.get(API);
     setGames(res.data);
   }
